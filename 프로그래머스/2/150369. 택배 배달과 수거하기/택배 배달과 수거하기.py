@@ -5,10 +5,6 @@ def solution(cap, n, deliveries, pickups):
     #최소이동거리
     answer = 0
     #방문할 때 캡이 초과되는 경우
-    deliveries.insert(0, 0)
-    deliveries.insert(0, 0)
-    pickups.insert(0, 0)
-    pickups.insert(0, 0)
     for i in range(n):
         if deliveries[-i-1] >= cap:
             A = deliveries[-i-1] % cap
